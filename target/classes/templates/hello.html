@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/beefed"  method="post">
+        请选择服务器IP:       <select style="width:300px;height=50px;" id="serverIp" name="serverIp">
+        <option th:each="canshu:${canshuList}" th:text="${canshu.serverIp}" th:value="${canshu.serverIp}"></option>
+        </select><br><br>
+
+        请选择服务器用户名:   <select style="width:300px;height=30px;" id="serverUserName" name="serverUserName">
+            <option th:each="canshu:${canshuList}" th:text="${canshu.serverUserName}" th:value="${canshu.serverUserName}"></option>
+        </select><br><br>
+
+        请选择服务器密码:     <select style="width:300px;height=30px;" id="serverPassWord" name="serverPassWord">
+            <option th:each="canshu:${canshuList}" th:text="${canshu.serverPassWord}" th:value="${canshu.serverPassWord}"></option>
+        </select><br><br>
+
+        请选择数据库用户名:    <select style="width:300px;height=30px;" id="databaseUserName" name="databaseUserName">
+            <option th:each="canshu:${canshuList}" th:text="${canshu.databaseUserName}" th:value="${canshu.databaseUserName}"></option>
+        </select><br><br>
+
+        请选择数据库密码:      <select style="width:500px;height=30px;" id="databasePassWord" name="databasePassWord">
+            <option th:each="canshu:${canshuList}" th:text="${canshu.databasePassWord}" th:value="${canshu.databasePassWord}"></option>
+        </select><br><br>
+
+        请选择数据库端口:      <select style="width:300px;height=30px;" id="databasePort" name="databasePort">
+            <option th:each="canshu:${canshuList}" th:text="${canshu.databasePort}" th:value="${canshu.databasePort}"></option>
+        </select><br><br>
+
+        请选择数据库Sock地址:  <select style="width:300px;height=30px;" id="databaseSock" name="databaseSock">
+            <option th:each="canshu:${canshuList}" th:text="${canshu.databaseSock}" th:value="${canshu.databaseSock}"></option>
+        </select><br><br>
+
+        请输入要备份的数据库名: <input name="databaseName" value="" /><br><br>
+        <input type="submit"/>
+    </form>
+
+</body>
+</html>

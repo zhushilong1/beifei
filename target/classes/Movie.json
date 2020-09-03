@@ -1,0 +1,34 @@
+{
+  "RECORDS": [
+    {
+      "serverUserName": "1",
+      "serverPassWord": "1",
+      "serverIp": "1",
+      "databaseUserName": "1",
+      "databasePassWord": "1",
+      "databasePort": "1",
+      "databaseSock": "1",
+      "databaseName": "1"
+    },
+    {
+      "serverUserName": "2",
+      "serverPassWord": "2",
+      "serverIp": "2",
+      "databaseUserName": "2",
+      "databasePassWord": "2",
+      "databasePort": "2",
+      "databaseSock": "2",
+      "databaseName": "2"
+    },
+    {
+      "serverUserName": "3",
+      "serverPassWord": "3",
+      "serverIp": "3",
+      "databaseUserName": "3",
+      "databasePassWord": "3",
+      "databasePort": "3",
+      "databaseSock": "3",
+      "databaseName": "3"
+    }
+  ]
+}
